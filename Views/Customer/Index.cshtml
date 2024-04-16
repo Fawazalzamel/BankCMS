@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Customer[]
+
+
+
+
+<table class="table">
+    <thead>
+    <td>Customer CivilID</td>
+    <td>Employee Name</td>
+    <td>Employee Email</td>
+    <td>Employee Phone number</td>
+    </thead>
+
+    <tbody>
+        @foreach (var customerDetails in Model)
+        {
+            <tr>
+
+                <td>@customerDetails.CivilId</td>
+                <td>@customerDetails.Name</td>
+                <td>@customerDetails.Email</td>
+                <td>@customerDetails.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
